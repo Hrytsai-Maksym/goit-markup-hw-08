@@ -424,22 +424,6 @@ ul {
 
 /*меню*/
 @media screen and (min-width: 768px) {
-  .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .header__navigation-list {
     position: relative;
     display: -webkit-box;
@@ -682,5 +666,140 @@ ul {
     width: 10px;
     /* margin-right: 10px; */
   }
+}
+
+.header__logo {
+  font-style: normal;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  /* identical to box height */
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo__color {
+  color: #2196f3;
+}
+
+.logo__color-a,
+.web-color-a {
+  color: #000000;
+}
+
+.footer__web-color-b {
+  color: #ffffff;
+}
+
+.name {
+  background: #2f303a;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .name {
+    /*геометрия*/
+    padding-bottom: 118px;
+    padding-top: 118px;
+    /*цвет*/
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .name {
+    /*геометрия*/
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
+
+.section-hero__title-hero {
+  /*геометрия*/
+  /*цвет*/
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 0;
+  /*динамика*/
+}
+
+.section-hero {
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Hero.jpg);
+  /* background-image:  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 480px) {
+  .section-hero {
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    max-width: 1199px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    max-width: 1600px;
+  }
+}
+
+.section-hero__button {
+  display: inline-block;
+  border: none;
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  /*кнопка параметры*/
+  min-width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 32px;
 }
 /*# sourceMappingURL=main.css.map */

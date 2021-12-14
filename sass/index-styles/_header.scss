@@ -15,12 +15,6 @@
     align-items: center;
 }
 /*меню*/
-.flex{
-    @media screen and(min-width:768px){
-    display: flex;}
-    @media screen and(min-width:1200px){
-        display: flex;}
-}
 .header__navigation-list {
 
     @media screen and(min-width:768px){

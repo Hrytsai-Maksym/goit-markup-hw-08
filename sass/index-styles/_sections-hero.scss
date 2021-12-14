@@ -1,0 +1,96 @@
+.name {
+    background: #2f303a;
+    color: $button-text-color;
+    text-align: center;
+    @media screen and(min-width:480px){
+           /*геометрия*/
+    padding-bottom: 118px;
+    padding-top: 118px;
+    /*цвет*/
+    }
+    @media screen and(min-width:768px){
+        padding-bottom: 118px;
+        padding-top: 118px;
+    }
+    @media screen and(min-width:1200px){
+    /*геометрия*/
+    padding-bottom: 200px;
+    padding-top: 200px;
+    }
+}
+
+.section-hero__title-hero {
+    /*геометрия*/
+  
+    /*цвет*/
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+  
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 0;
+   /*динамика*/
+}
+
+.section-hero{
+    @media screen and(min-width:480px){
+        max-width: 767px;  }
+    @media screen and(min-width:768px){
+        max-width: 1199px;
+    }
+    @media screen and(min-width:1200px){
+        max-width: 1600px;
+    }
+
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    // max-width: 1600px;
+    background-image: linear-gradient( 
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),url(../image/Hero.jpg);
+    /* background-image:  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .section-hero__button {
+        display: inline-block;
+        border: none;
+       
+      
+        color: $button-text-color;
+        background-color: $button-background;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        /* identical to box height, or 187% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+      
+        /*кнопка параметры*/
+        min-width: 200px;
+        height: 50px;
+        left: 700px;
+        top: 430px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        padding: 10px 32px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px 32px;
+      }
