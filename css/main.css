@@ -423,7 +423,33 @@ ul {
 }
 
 /*меню*/
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__navigation-list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .header__navigation-list {
     position: relative;
     display: -webkit-box;
@@ -460,16 +486,48 @@ ul {
 }
 
 /*полоска*/
-.border-a ::after {
-  content: "";
-  position: absolute;
-  background: #2196F3;
-  border-radius: 2px;
-  left: 0;
-  bottom: -32px;
-  width: 100%;
-  height: 4px;
-  opacity: 1;
+@media screen and (min-width: 768px) {
+  .border-a ::after {
+    content: "";
+    position: absolute;
+    background: #2196F3;
+    border-radius: 2px;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .border-a ::after {
+    content: "";
+    position: absolute;
+    background: #2196F3;
+    border-radius: 2px;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .current {
+    color: #2196f3;
+    position: relative;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .current {
+    color: #2196f3;
+    position: relative;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -481,6 +539,148 @@ ul {
 @media screen and (min-width: 1200px) {
   .header__navigation-list :last-child {
     margin-right: 0px;
+  }
+}
+
+.navigation-list__link {
+  padding: 0px;
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .header-contakts__list {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    fill: #757575;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  .header-contakts__list :hover,
+  .header-contakts__list :focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contakts__list {
+    margin-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-contakts__list :last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header-contakts__list {
+    margin-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-contakts__list :last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contakts__contakt-item {
+    fill: #757575;
+    margin-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+  }
+  .header-contakts__contakt-item :hover,
+  .header-contakts__contakt-item :focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+  .header-contakts__contakt-item :last-child {
+    margin-right: 0px;
+  }
+  .header-contakts__contakt-item a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: 30px;
+    color: #757575;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contakts__contakt-item {
+    fill: #757575;
+    margin-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+  }
+  .header-contakts__contakt-item :hover,
+  .header-contakts__contakt-item :focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+  .header-contakts__contakt-item :last-child {
+    margin-right: 0px;
+  }
+  .header-contakts__contakt-item a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: 30px;
+    color: #757575;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head-svg-mail {
+    height: 12px;
+    margin-right: 10px;
+    width: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .head-svg-mail {
+    height: 12px;
+    margin-right: 10px;
+    width: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head-svg-phone {
+    height: 16px;
+    width: 10px;
+    /* margin-right: 10px; */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .head-svg-phone {
+    height: 16px;
+    width: 10px;
+    /* margin-right: 10px; */
   }
 }
 /*# sourceMappingURL=main.css.map */
