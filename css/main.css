@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -393,5 +394,93 @@ ul {
 .header {
   background: #ffffff;
   color: #212121;
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 480) {
+  .header__navigation {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768) {
+  .header__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*меню*/
+@media screen and (min-width: 768) {
+  .header__navigation-list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 93px;
+  }
+}
+
+.header__navigation-list a {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  margin-left: 50px;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__navigation-list :active,
+.header__navigation-list :hover,
+.header__navigation-list :focus {
+  color: #2196f3;
+}
+
+.list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*полоска*/
+.border-a ::after {
+  content: "";
+  position: absolute;
+  background: #2196F3;
+  border-radius: 2px;
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 4px;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .header__navigation-list :last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation-list :last-child {
+    margin-right: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
