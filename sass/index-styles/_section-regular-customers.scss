@@ -1,0 +1,141 @@
+.section-regular-customers{
+    padding: 0px;
+    margin-bottom: 94px;
+    margin-top: 94px;
+    @media screen and(min-width:480px) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    }
+    @media screen and(min-width:768px){
+    margin-bottom: 60px;
+    margin-top: 60px;
+    }
+    @media screen and(min-width:1200px){
+    margin-bottom: 94px;
+    margin-top: 94px;
+}
+}
+
+.regular-customers__title{
+     font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    @media screen and(min-width:480px){
+        margin-bottom: 30px;
+}
+    
+    @media screen and(min-width:768px){
+        margin-bottom: 50px;
+    }
+    @media screen and(min-width:1200px){
+        margin-bottom: 50px;
+    }
+}
+
+.regular-customers__list{
+    @media screen and(min-width:480px){
+        padding: 0px;
+    }
+    @media screen and(min-width:768px) and(max-width:1100px){
+display: flex;
+flex-wrap: wrap;
+    }
+    @media screen and(min-width:1200px){
+        display: flex;
+        justify-content: center;
+}
+}
+
+.regular-customers__item{
+    // border: 1px solid $color-of-the-costumers;
+    fill:$color-of-the-costumers ;
+box-sizing: border-box;
+border-radius: 4px;
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    padding: 0px;
+    
+
+    & :hover,
+    & :focus{
+        border-color: $accent-color;
+        fill:$accent-color ;
+    }
+   
+    @media screen and(min-width:480px){
+         width: calc(
+            (100%-3+30)/2
+);
+        
+    }
+    @media screen and(min-width:768px) and(min-width:1100px){
+        margin-right: 30px;
+        // width: calc(
+        //     (100%-2+30)/2
+        // );
+    }
+    @media screen and(min-width:1200px){
+        margin-right: 30px;
+        & :last-child{
+            margin-right: 0px;
+            }
+}
+    }
+
+
+
+
+    .regular-customers__link{
+        display: block;
+               fill: $color-sprite;
+        border: 1px solid $color-of-the-costumers;
+        background-color: $button-text-color;
+            transition-property:fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        & :hover,
+        & :focus{
+            background-color: $button-text-color;
+        border-color: $accent-color;
+          fill: $accent-color;
+}
+@media screen and(min-width:480px){
+    width: 210px;
+    height: 92px;
+}
+@media screen and(min-width:768px){
+    width: 226px;
+    height: 92px;
+}
+@media screen and(min-width:1200px){
+    width: 170px;
+    height: 92px;
+}     
+}
+
+
+.regular-customers__svg{
+    width: 106px;
+    height: 60px;
+      
+
+      & :hover,
+      & :focus{
+        fill: $color-sprite;
+      }
+      @media screen and(min-width:480px){
+        margin: 16px 52px;
+      }
+      @media screen and(min-width:768px){
+        margin: 16px 60px;
+      }
+      @media screen and(min-width:1200px){
+        margin: 16px 32px;
+      }
+}
