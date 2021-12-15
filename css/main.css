@@ -1404,6 +1404,11 @@ p {
 @media screen and (min-width: 480px) {
   .regular-customers__list {
     padding: 0px;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1450,7 +1455,11 @@ p {
 
 @media screen and (min-width: 480px) {
   .regular-customers__item {
-    width: calc( (100%-3+30)/2);
+    margin-bottom: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    fle-basis: calc(100% / 2 - 30px);
+    margin-bottom: 30px;
   }
 }
 
