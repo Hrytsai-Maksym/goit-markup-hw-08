@@ -1,0 +1,123 @@
+.footer{
+    @media screen and(min-width:480px) {
+        background-color: #2f303a;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and(min-width:768px){
+        background-color: #2f303a;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and(min-width:1200px){
+        display: flex;
+        flex-direction: row;
+    
+        background-color: #2f303a;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.footer__adres-div{
+    @media screen and(min-width:1200px){
+        margin-bottom: 60px;
+    }
+    @media screen and(min-width:1200px){}
+    @media screen and(min-width:1200px){
+        margin-right: 70px;
+    }
+  
+}
+
+.footer__address{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer__item{
+    @media screen and(min-width:1200px){
+        margin-bottom: 8px;
+    }
+    @media screen and(min-width:1200px){
+margin-bottom: 8px;
+    }
+    @media screen and(min-width:1200px){
+        margin-bottom: 9px;
+    }
+    
+    &:focus,
+    &:hover{
+        color: $accent-color; 
+    }
+}
+
+.footer__logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.footer__web-color{
+    color: #2196F3;
+}
+
+.footer__list{
+    padding: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    &:last-child{
+    margin: 0px;
+    }
+}
+
+.footer__link-adress{
+    font-size: 14px;
+    line-height: 1.71;
+    
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.footer-item__mail,
+.footer-item__telephone{
+    font-size: 14px;
+    line-height: 1.71;
+    
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+
+.footer__social-network{
+    @media screen and(min-width:1200px){}
+    @media screen and(min-width:1200px){}
+    @media screen and(min-width:1200px){
+        margin-left: 70px;
+        padding: 0px ;
+    }
+}
+
+.footer__title-social-network{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    }
+
