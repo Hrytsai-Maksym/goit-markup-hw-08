@@ -86,20 +86,15 @@
         margin-right: 0px;
         margin-bottom: 30px;
     }
-    @media screen and(min-width:768px){
+    @media screen and(min-width:768px) and  (max-width:1100px){
        
         margin-bottom: 30px;
         width: calc(
             (100%-2+30)/2
         );
     }
-    @media screen and(max-width:1100px){
-       
-        margin-bottom: 30px;
-        width: calc(
-            (100%-2+30)/2
-        );
-    }
+   
+    
     @media screen and(min-width:1200px){
            margin-right: 30px;
         
@@ -135,7 +130,11 @@
     padding: 30px 32px;
 }
 
-
+.img{
+    @media screen and(min-width:480px) and (min-width:480px){
+        width: 100%;
+    } 
+}
 
 
     /////////********Ссылки******///////
