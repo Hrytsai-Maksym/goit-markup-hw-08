@@ -16,6 +16,9 @@
 }
 /*меню*/
 .header__navigation-list {
+    @media screen and(min-width:480px){
+        display: none;
+    }
 
     @media screen and(min-width:768px){
     position: relative;
@@ -107,7 +110,6 @@
 }
 
 .header-contakts__list{
-    @media screen and(min-width:480px){
     margin-bottom: 0px;
     margin-top: 0px;
     fill: $color-command-post;
@@ -120,8 +122,11 @@ margin-left: auto;
     & :focus{
         color: #2196f3;
         fill: $accent-color;
-      }
     }
+    @media screen and(min-width:480px){
+   display: none;
+      }
+    
       
     
       @media screen and(min-width:768px){
