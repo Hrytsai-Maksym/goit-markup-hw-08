@@ -24,10 +24,22 @@
     <!--golova-->
     <header class="header">
       <div class="container-header">
-        <nav class="header__navigation">
+         <nav class="header__navigation">
          <a class="header__logo" href="index.html">
         <span class="logo__color">Web</span><span class="logo__color-a">Studio</span></a>
-        
+        <button class="header__menu-button is-open" type="button" >
+          <svg class="header__menu-button-svg"
+          aria-label="мобильное меню"
+          aria-controls="menu-container"
+          aria-expanded="false"
+          >
+            <use class="icon-menu" href="./image/Botton-mobile-menu.svg#icon-menu" width="40px", height="40px"></use>
+            <use class="icon-closet" href="./image/Botton-mobile-menu.svg#icon-close"width="40px", height="40px"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="menu-container" > vМОБИЛЬНОЕ МЕНЮ</div>
+      </div>
+     
         <ul class="header__navigation-list list">
         <li class="navigation-list__item border-a">
         <a href="./index.html" class="navigation-list__link current">Студия</a>
@@ -57,9 +69,6 @@
       +38 096 111 11 11</a>
       </li></div>
       </ul>
-      
-      
-
       </nav>
       </div>
     </header>
