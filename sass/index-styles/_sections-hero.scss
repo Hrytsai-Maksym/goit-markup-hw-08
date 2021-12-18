@@ -40,15 +40,6 @@
 }
 
 .section-hero{
-    @media screen and(min-width:480px){
-        max-width: 767px;  }
-    @media screen and(min-width:768px){
-        max-width: 1199px;
-    }
-    @media screen and(min-width:1200px){
-        max-width: 1600px;
-    }
-
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -57,11 +48,49 @@
     background-image: linear-gradient( 
     to right,
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),url(../image/Hero.jpg);
+    rgba(47, 48, 58, 0.4)),url(../image/Heroi/mobile_x1.png);
     /* background-image:  */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image:linear-gradient( 
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../image/Heroi/mobilw_x2.png);
+}
+
+@media screen and(min-width:768px){
+            background-image: linear-gradient( 
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../image/Heroi/Tablet_x1.png);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image:linear-gradient( 
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../../image/Heroi/tablet_x2.png);
+}
+
+}
+@media screen and(min-width:1200px){
+    background-image:linear-gradient( 
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../../image/Heroi/desctop_x1.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:linear-gradient( 
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../../image/Heroi/desctop_x2.png);
+}
+}
     }
 
     .section-hero__button {

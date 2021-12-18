@@ -37,7 +37,10 @@
             <use class="icon-closet" href="./image/Botton-mobile-menu.svg#icon-close"width="40px", height="40px"></use>
           </svg>
         </button>
-        <div class="mobile-menu" id="menu-container" > vМОБИЛЬНОЕ МЕНЮ</div>
+        <div class="container__mobile-menu" >
+        <div class="mobile-menu"></div>
+      </div>
+        <!-- <div class="mobile-menu" id="menu-container" > vМОБИЛЬНОЕ МЕНЮ</div> -->
       </div>
      
         <ul class="header__navigation-list list">
@@ -243,13 +246,20 @@
               <a class="section-our-work__link" href="">
                 <!-- class="texte-of-image-work" -->
                 <div class="section-our-work__div">
-                  <!-- class="div-text-image" -->
-                  <img
-                  src="./img/1.jpg"
-                  alt="на столе с ноутбуком и планшетом идет разработка кода"
-                  width="370"
-                  height="294"
-              /></div> 
+               <picture>
+                 <source
+                 srcset="
+                 ./image/desctop/img__a1x.jpg,
+                 ./image/desctop/img__a2x.jpg"
+                 media="(min-width:1200px)" />
+                 <img
+                 src="./img/1.jpg"
+                 alt="на столе с ноутбуком и планшетом идет разработка кода"
+                 width="370"
+                 height="294"
+             />
+               </picture>
+                </div> 
               <div class="section-our-work__card-design">
               <!-- class="text-of-image-work-p" -->
             <p class="section-our-work-card-design__text">Десктопные приложения</p>
@@ -262,11 +272,17 @@
               <a class="section-our-work__link" href="#">
               <!-- class="texte-of-image-work" -->
                 <div class="section-our-work__div">
-                  <!-- class="div-text-image" -->
+                 <picture>
+                   <source
+                   srcset="
+                   ./image/desctop/img__b1x.jpg
+                   ./image/desctop/img__b2x.jpg"
+                   media="(min-width:1200px)">
                   <img src="./img/2.jpg" alt="смартфон в руках на фоне ноутбука и телевизора"
                   width="370"
                   height="294"
-              /></div>
+              />
+            </picture></div>
               <div class="section-our-work__card-design">
              <!-- class="text-of-image-work-p" -->
             <p class="section-our-work-card-design__text">Мобильные приложения</p>
@@ -279,11 +295,17 @@
               <a class="section-our-work__link" href="#">
                <!-- class="texte-of-image-work" -->
                 <div class="section-our-work__div">
-               <!-- class="div-text-image" -->
+              <picture>
+                <source
+                srcset="
+                ./image/desctop/img__c1x.jpg
+                ./image/desctop/img__c2x.jpg"
+                media="(min-width:1200px)">
                 <img src="./img/3.jpg" alt="геометорическая фигура на экране планшета в руках"
                   width="370"
                   height="294"
-              /></div>
+              />
+            </picture></div>
               <div class="section-our-work__card-design">
                 <!-- class="text-of-image-work-p" -->
             <p class="section-our-work-card-design__text">Дизайнерские решения</p>
@@ -303,11 +325,25 @@
           <ul class="section-our-team__list list centr">
             <!-- class="comand list centr" -->
             <li class="section-our-team__item">
-             <!-- class="comand-info" -->
+             <picture>
+               <source
+               srcset="
+               ./image/desctop/igor__desctop1x.jpg,
+               ./image/desctop/igor__desctop2x.jpg"
+               media="(min-width:1200px)">
+               <source
+               srcset="
+               ./image/tablet/igor__tablet1x.jpg,
+               ./image/tablet/igor__table2x.jpg"
+               media="(min-width:768px)">
+               <source
+               srcset="
+               ./image/mobile/igor__mobile1x.jpg,
+               ./image/mobile/igor__mobile1x.jpg"
+               media="(min-width:320px)">
               <img class="section-our-team__photo img" src="img/img-3.jpg" alt="Игорь Демьяненко"
-                width="270"
-                height="368"
-              />
+            
+              /></picture>
               <!-- class="photo-comand" -->
               <div class="section-our-team__spetifikation">
                 <!-- class="spetifikation-komand" -->
@@ -362,14 +398,29 @@
               </div>
               </li>
             <li class="section-our-team__item">
-               <!-- class="comand-info" -->
+               <picture>
+                 <source
+                 srcset="
+                 ./image/desctop/olga__desctop1x.jpg,
+                 ./image/desctop/olga__desctop2x.jpg"
+                 media="(min-width:1200px)">
+                 <source
+                 srcset="
+                 ./image/tablet/olga__tablet1x.jpg,
+                 ./image/tablet/olga__tablet2x.jpg"
+                 media="(min-width:768px)">
+                 <source
+                 srcset="
+                 ./image/mobile/olga__mobile1x.jpg,
+                 ./image/mobile/olga__mobile2x.jpg"
+                 media="(min-width:320px)">
               <img
                 class="section-our-team__photo img"
                 src="img/img-2.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="368"
-              />
+              /></picture>
                <!-- class="photo-comand" -->
               <div class="section-our-team__spetifikation">
                 <h3 class="section-our-team__title-name">Ольга Репина</h3>
@@ -422,14 +473,30 @@
               </div>
              </li>
             <li class="section-our-team__item">
-               <!-- class="comand-info" -->
+               <picture>
+                 <source
+                 srcset="
+                 ./image/desctop/nikolai__desctop1x.jpg,
+                 ./image/desctop/nikolai__desctop2x.jpg"
+                 media="(min-width:1200px)">
+                 <source
+                 srcset="
+                 ./image/tablet/nikolai__tablet1x.jpg,
+                 ./image/tablet/nikolai__tablet2x.jpg"
+                 media="(min-width:768px)">
+                 <source
+                 srcset="
+                 ./image/mobile/nikolai__mobile1x.jpg,
+                 ./image/mobile/nikolai__mobile2x.jpg"
+                 media="(min-width:320px)">
+                 
               <img
                 class="section-our-team__photo img"
                 src="img/img-1.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="368"
-              />
+              /></picture>
                <!-- class="photo-comand" -->
               <div class="section-our-team__spetifikation">
                 <h3 class="section-our-team__title-name">Николай Тарасов</h3>
@@ -482,14 +549,29 @@
               </div>
                      </li>
             <li class="section-our-team__item-a">
-              <!-- class="comand-info-a" -->
+              <picture>
+                <source
+                srcset="
+                ./image/desctop/mihail__desctop1x.jpg,
+                ./image/desctop/mihail__desctop2x.jpg"
+                media="(min-width:1200px)">
+                <source
+                srcset="
+                ./image/tablet/mihail__tablet1x.jpg.jpg,
+                ./image/tablet/mihail__tablet2x.jpg.jpg"
+                media="(min-width:768px)">
+                <source
+                srcset="
+                ./image/mobile/mihail__mobile1x.jpg,
+                ./image/mobile/mihail__mobile1x.jpg"
+                media="(min-width:320px)">
               <img
                 class="section-our-team__photo img"
                 src="img/img.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="368"
-              />
+              /></picture>
               <!-- class="photo-comand" -->
               <div class="section-our-team__spetifikation">
                 <h3 class="section-our-team__title-name">Михаил Ермаков</h3>
