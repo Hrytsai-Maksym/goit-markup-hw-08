@@ -1,0 +1,128 @@
+.open-mobile-menu {
+    margin-left: auto;
+    display: block;
+}
+
+.mob-menu {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 5;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    .container__mobile-menu {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        height: 100%;
+    }
+    @media screen and(min-width:768px) {
+        display: none;
+    }
+}
+
+.mobile-menu-closed {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.mobile-menu-item {
+    margin-bottom: 32px;
+    margin-left: 32px;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    & :hover,
+& :focus,
+& :active{
+    color: $accent-color;
+}
+}
+
+.mobile-menu-link{
+    font-weight: 500;
+font-size: 40px;
+line-height:calc(47/40) ;
+letter-spacing: 0.02em;
+color: #212121;
+& :hover,
+& :focus,
+& :active{
+    color: $accent-color;
+}
+}
+
+.mob-menu-bottom{
+    margin-top: auto;
+}
+
+.mobile-menu-contakts {
+    margin-bottom: 134px;
+}
+
+.mobile-menu-contakts__item{
+    margin-bottom: 32px;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    & :hover,
+& :focus,
+& :active{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40/34);
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+}
+.mobile_menu-contakts__link{
+    font-weight: 500;
+font-size: 24px;
+line-height:calc(28/24)px;
+letter-spacing: 0.02em;
+color: #757575;
+& :hover,
+& :focus,
+& :active{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40/34);
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+}
+
+.mobile-menu-ssocial-network{
+    margin-bottom: 48px;
+}
+
+.mobile-menu-ssocial-network__list{
+    display: flex;
+}
+
+.mobile-menu-ssocial-network__item{
+    padding: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+& :not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    border: none;
+}
+}
+
+.mobile-menu-ssocial-network__link{
+    font-weight: 500;
+font-size: 18px;
+line-height: calc(22/18) ;
+letter-spacing: 0.02em;
+color: #2196F3;
+
+}
+
+.is-hidden-a {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
