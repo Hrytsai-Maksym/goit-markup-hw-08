@@ -1,6 +1,9 @@
 .open-mobile-menu {
     margin-left: auto;
     display: block;
+    @media screen and(min-width:768px) {
+        display: none;
+    }
 }
 
 .mob-menu {

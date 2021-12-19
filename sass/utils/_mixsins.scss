@@ -1,0 +1,34 @@
+// @mixin list($ml, $mt, $mr, $mb, $m $wrap) {
+//     display: flex;
+//     margin-left: $ml;
+//     margin-top: $mt;
+//     margin-right: $mr;
+//     margin-bottom: $mb;
+//     margin: $m;
+//     flex-wrap: $wrap;
+//   }
+  @mixin lis($ml, $mt, $mr, $mb, $m, $wrap) {
+      display: flex;
+      margin-left: $ml;
+      margin-top: $mt;
+      margin-right: $mr;
+      margin-bottom: $mb;
+      margin: $m;
+      flex-wrap: $wrap;
+  }
+  //   @mixin item($ml, $mt, $mr, $mb, $m $q, $gap) {
+//     margin-left: $ml;
+//     margin-top: $mt;
+//     margin-right: $mr;
+//     margin-bottom: $mb;
+//     margin: $m;
+//     flex-basis: calc(100% / #{$q} - #{$gap});
+//   }
+  @mixin item($ml, $mt, $mr, $mb, $m, $q, $gap) {
+      margin-left: $ml;
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin: $m;
+    flex-basis: calc(100%/#{$q} - #{$gap});
+  }
