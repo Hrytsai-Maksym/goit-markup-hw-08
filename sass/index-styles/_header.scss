@@ -150,6 +150,7 @@ margin-left: auto;
       @media screen and(min-width:1200px){
         margin-right: 50px;
         display: flex;
+        flex-direction: row;
         & :last-child{
             margin-right: 0px;}
       }

@@ -7,7 +7,7 @@
 //     margin: $m;
 //     flex-wrap: $wrap;
 //   }
-  @mixin lis($ml, $mt, $mr, $mb, $m, $wrap) {
+  @mixin list($ml, $mt, $mr, $mb, $m, $wrap) {
       display: flex;
       margin-left: $ml;
       margin-top: $mt;
