@@ -21,7 +21,7 @@
 }
 // /*меню*/
 .header__navigation-list {
-    @media screen and(min-width:480px){
+    @media screen and(min-width:320px)and (max-width:767px){
         display: none;
     }
 
@@ -132,7 +132,7 @@ margin-left: auto;
         color: #2196f3;
         fill: $accent-color;
     }
-    @media screen and(min-width:480px){
+    @media screen and(min-width:320px){
    display: none;
       }
 
