@@ -391,6 +391,7 @@
       <!-- class="footer" -->
       <div class="container-footer">
         <!-- class="container-footer" -->
+        <div class="footer-adress__w">
       <div class="footer__adres">
         <!-- class="footer-adres" -->
         <a class="footer__logo" href="./index.html">
@@ -407,7 +408,7 @@
                       <!-- class="footer-ul" -->
             <li class="footer__item">
               <!-- class="adres-list" -->
-              <a class="adress" href="г.Киев,пр-тЛесиУкраинки,26"
+              <a class="footer__link-adress" href="г.Киев,пр-тЛесиУкраинки,26"
                 >г. Киев, пр-т Леси Украинки, 26</a>
                 <!-- class="adress" -->
             </li>
@@ -427,7 +428,7 @@
       </div>
       <div class="footer__social-network">
         <!-- class="social-network" -->
-        <h2 class="footer__heading-social-network">присоединяйтесь</h2>
+        <p 2 class="footer__title-social-network">присоединяйтесь</p>
         <!-- class="social-network-h2" -->
         <ul class="footer-social-network__list">
           <!-- class="social-network-list" -->
@@ -470,21 +471,22 @@
           </li>
         </ul>
       </div>
+    </div>
       <div class="footer__subscribe-to-the-newsletter">
         <!-- class="subscribe-to-the-newsletter" -->
-        <h2 class="footer__heading-subscribe">Подпишитесь на рассылку</h2>
+        <p class="footer__heading-subscribe">Подпишитесь на рассылку</p>
         <!-- class="subscribe-to-the-newsletter-h2" -->
-        <form  autocomplete="on">
+        <form class="form" autocomplete="on">
           <input class="footer__input-email" type="email" name="mail" id="mail" placeholder="E-mail">
-          <!-- class="subscribe-to-the-newsletter-input" -->
+          <button class="footer__subscribe-button" type="button">
+            <!-- class="subscribe-to-the-newsletter-button" -->
+            Подписаться
+           <svg class="subscribe-to-the-newsletter-svg" width="24px" height="24px">
+            <!-- class="subscribe-to-the-newsletter-svg" -->
+            <use href="./image/symbol-defs-button-hover.svg#icon-icon-send-1"></use>
+           </svg></button>
           <label for="mail"> 
-            <button class="footer__subscribe-button" type="button">
-              <!-- class="subscribe-to-the-newsletter-button" -->
-              Подписаться
-             <svg class="subscribe-to-the-newsletter-svg" width="24px" height="24px">
-              <!-- class="subscribe-to-the-newsletter-svg" -->
-              <use href="./image/symbol-defs-button-hover.svg#icon-icon-send-1"></use>
-             </svg></button></label></form>
+                        </label></form>
         
       </div>
         <!-- <ul class="social-network-list">
@@ -517,7 +519,7 @@
             </button>
           </li>
         </ul> -->
-      </div>
+      
     </div> </footer>
   </body>
 </html>

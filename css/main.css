@@ -2251,6 +2251,13 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    -webkit-transform: translate(28%, -65%);
+            transform: translate(28%, -65%);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -2534,13 +2541,14 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .input-modal {
+    width: 370px;
     height: 40px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .input-modal {
     width: 448px;
     height: 40px;
@@ -2715,6 +2723,7 @@ textarea {
 
 @media screen and (min-width: 480px) and (min-width: 768px) {
   .cartridge__list {
+    width: calc(100%-2+30)/3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
