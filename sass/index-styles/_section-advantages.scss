@@ -32,10 +32,10 @@
     @media screen and(min-width:768px){
         display: flex;
         flex-wrap: wrap;
-        & :nth-child(2n){
-            margin-right: 0px;
-        //   @include list(null,null,null,null,-15px,wrap)
-        }
+        // & :nth-child(2n){
+        //     margin-right: 0px;
+        // //   @include list(null,null,null,null,-15px,wrap)
+        // }
      
     }
     @media screen and(min-width:1200px){
