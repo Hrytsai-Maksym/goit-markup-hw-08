@@ -17,10 +17,15 @@
     margin-right: auto;
     padding: 0px;
 
-    @media screen and(min-width:480px){
+    @media screen and(min-width:480px)and(max-width:767px){
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: start;
+    }
+    @media screen and(min-width:768px){
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 }
 

@@ -2700,6 +2700,7 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cartridge__item {
+    width: 100%;
     margin: 15px;
     -ms-flex-preferred-size: calc(100%/2 - 30px);
         flex-basis: calc(100%/2 - 30px);
@@ -2744,6 +2745,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2849,7 +2851,7 @@ textarea {
   padding: 0px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .filter-button__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2860,6 +2862,19 @@ textarea {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-button__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
