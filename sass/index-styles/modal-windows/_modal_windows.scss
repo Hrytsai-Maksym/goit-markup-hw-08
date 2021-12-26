@@ -2,7 +2,10 @@
     margin:  40px; 
  }
  .backdrop{
-//    position: fixed;
+   position: fixed;
+   padding: 0px;
+   margin: 0px;
+   z-index: 10;
 //    top: 0;
 //    left: 0;
 //    width: 100%;

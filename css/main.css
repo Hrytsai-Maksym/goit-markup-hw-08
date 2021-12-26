@@ -2201,6 +2201,10 @@ p {
 }
 
 .backdrop {
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -2262,8 +2266,8 @@ p {
   .modal {
     width: 528px;
     height: 581px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
   }
 }
 
