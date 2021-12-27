@@ -2,6 +2,12 @@
     background: #ffffff;
     color: $prymery-text-color;
     border-bottom: 1px solid  #ECECEC; 
+    @media screen and(min-width:320px)and(max-width:767px) {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      // align-items: center;
+    }
    
     }
 
@@ -14,8 +20,11 @@
         /* overflow: hidden; */
         }
        
-        // .header__navigation{
-        //   @media screen and(min-width:320px) and (min-width:320px) {
-        //     display: flex;
-        //   }
-        // }
+        .header__navigation{
+          @media screen and(min-width:320px) and (max-width:767px) {
+            display: flex;
+            flex-direction: row;
+            // align-items: center;
+           align-items: center;
+          }
+        }

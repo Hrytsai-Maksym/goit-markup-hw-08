@@ -75,9 +75,11 @@ ul {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container-header {
-    width: 480px;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -785,6 +787,17 @@ ul {
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   text-align: center;
   height: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  .header__logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28px/24px);
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1742,12 +1755,13 @@ p {
           flex-direction: row;
   background-color: #2f303a;
   padding-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer {
     display: block;
+    padding-bottom: 120px;
   }
 }
 
@@ -2929,6 +2943,12 @@ textarea {
   margin-right: 0px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .filtr-button__item {
+    margin-bottom: 8px;
+  }
+}
+
 .filter__button:last-child {
   margin-right: 0px;
 }
@@ -3024,6 +3044,18 @@ textarea {
   border-bottom: 1px solid  #ECECEC;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header_portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .header__hide {
   display: none;
 }
@@ -3031,6 +3063,21 @@ textarea {
 .image-fone-portfolio {
   position: relative;
   /* overflow: hidden; */
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .open-mobile-menu {
