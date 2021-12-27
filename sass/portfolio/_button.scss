@@ -56,7 +56,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubi
 @media screen and(min-width:480px){
     margin-bottom: 15px;
     margin-right: 8px;
+    margin: 0px;
 }
+}
+
+.filtr-button__item{
+    margin-right: 8px;
+    & :last-child{
+        margin-right: 0px;
+    }
 }
 
 

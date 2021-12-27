@@ -2909,7 +2909,16 @@ textarea {
   .filter-button__item {
     margin-bottom: 15px;
     margin-right: 8px;
+    margin: 0px;
   }
+}
+
+.filtr-button__item {
+  margin-right: 8px;
+}
+
+.filtr-button__item :last-child {
+  margin-right: 0px;
 }
 
 .filter__button:last-child {
