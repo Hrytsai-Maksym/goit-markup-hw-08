@@ -1,5 +1,13 @@
 .section-our-team{
     background: #f5f4fa;
+    @media screen and(min-width:480px) {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    @media screen and(min-width:1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 }
 
 
@@ -44,12 +52,12 @@ margin-bottom: 10px;
 
 .section-our-team__list{
     @media screen and(min-width:480px){
-        padding-bottom: 60px;
+       
     }
     @media screen and(min-width:768px){
         display: flex;
         padding: 0px;
-        padding-bottom: 60px;
+       
     }
     @media screen and(min-width:1200px){
         display: flex;
