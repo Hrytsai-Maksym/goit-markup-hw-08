@@ -1742,7 +1742,7 @@ p {
           flex-direction: row;
   background-color: #2f303a;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1826,6 +1826,12 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer__address {
+    margin-bottom: 50px;
+  }
 }
 
 .footer__item {
@@ -1938,6 +1944,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -2075,6 +2082,7 @@ p {
 }
 
 .footer__input-email {
+  height: 50px;
   background: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
