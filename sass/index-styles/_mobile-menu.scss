@@ -1,6 +1,8 @@
 .open-mobile-menu {
     margin-left: auto;
     display: block;
+    border: none;
+    // border-color: aquamarine;
     @media screen and(min-width:768px) {
         display: none;
     }
@@ -125,7 +127,8 @@ color: #2196F3;
 }
 
 .is-hidden-a {
-    // visibility: hidden;
+  
       opacity: 0;
     pointer-events: none;
+    transform: scale(0.5);
 }

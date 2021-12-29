@@ -1041,6 +1041,9 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
   }
 }
 
@@ -1052,11 +1055,16 @@ ul {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .section-advantages__list :last-child {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .section-advantages__item {
-    margin-right: 15px;
+    margin: 15px;
+    -ms-flex-preferred-size: calc(100%/2 - 30px);
+        flex-basis: calc(100%/2 - 30px);
   }
 }
 
@@ -1327,6 +1335,43 @@ p {
   background: #f5f4fa;
 }
 
+@media screen and (min-width: 480px) {
+  .section-our-team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33/28);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section-our-team__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: calc(33/28);
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-our-team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background: #f5f4fa;
+  }
+}
+
 .section-our-team__title-name {
   padding-top: 0px;
   margin-bottom: 10px;
@@ -1348,6 +1393,22 @@ p {
     display: -ms-flexbox;
     display: flex;
     padding: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1381,6 +1442,15 @@ p {
   .section-our-team__item,
   .section-our-team__item-a {
     width: calc( (100%-2+30)/2);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-our-team__item,
+  .section-our-team__item-a {
+    margin: 15px;
+    -ms-flex-preferred-size: calc(100%/3 - 30px);
+        flex-basis: calc(100%/3 - 30px);
   }
 }
 
@@ -1563,12 +1633,24 @@ p {
 
 @media screen and (min-width: 480px) {
   .regular-customers__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33/28);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .regular-customers__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: calc(33/28);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
     margin-bottom: 50px;
   }
 }
@@ -1973,9 +2055,9 @@ p {
 
 @media screen and (min-width: 768px) {
   .footer__social-network {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1984,6 +2066,9 @@ p {
     margin-bottom: 0px;
     margin-top: 0px;
     margin-left: 50px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -2136,11 +2221,17 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__input-email {
+    height: 50px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__input-email {
     width: 358px;
-    height: 50px;
     margin-right: 12px;
+    margin-bottom: 0px;
   }
 }
 
@@ -2166,12 +2257,6 @@ p {
   padding: 10px 62px 10px 29px;
 }
 
-@media screen and (min-width: 480px) {
-  .footer__subscribe-button {
-    margin-left: 30%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer__subscribe-button {
     margin: 0px;
@@ -2184,8 +2269,24 @@ p {
   }
 }
 
+@media screen and (min-width: 468px) {
+  .form-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .form {
+  .form-email {
+    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2199,8 +2300,25 @@ p {
         -ms-flex-pack: start;
             justify-content: flex-start;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-email {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-email {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -2251,10 +2369,15 @@ p {
 }
 
 .backdrop {
+  background: rgba(0, 0, 0, 0.2);
   position: fixed;
   padding: 0px;
   margin: 0px;
   z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -2284,6 +2407,7 @@ p {
    position: relative;
  } */
 .modal {
+  background: rgba(0, 0, 0, 0.2);
   padding: 40px 39px 40px 41px;
   position: absolute;
   top: 50%;
@@ -2307,8 +2431,8 @@ p {
 
 @media screen and (min-width: 768px) {
   .modal {
-    -webkit-transform: translate(28%, -65%);
-            transform: translate(28%, -65%);
+    -webkit-transform: translate(-64%, -65%);
+            transform: translate(-64%, -65%);
   }
 }
 
@@ -2316,8 +2440,8 @@ p {
   .modal {
     width: 528px;
     height: 581px;
-    -webkit-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
+    -webkit-transform: translate(-63%, -50%);
+            transform: translate(-63%, -50%);
   }
 }
 
@@ -3111,6 +3235,7 @@ textarea {
 .open-mobile-menu {
   margin-left: auto;
   display: block;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -3257,5 +3382,7 @@ textarea {
 .is-hidden-a {
   opacity: 0;
   pointer-events: none;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 /*# sourceMappingURL=main.css.map */

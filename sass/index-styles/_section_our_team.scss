@@ -23,12 +23,38 @@
     background: #f5f4fa;
 
     @media screen and(min-width:480px) {
+        font-weight: 700;
+font-size: 28px;
+line-height: calc(33/28);
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
         // padding-top: 0px;
     }
     @media screen and(min-width:480px){
+        font-weight: bold;
+font-size: 28px;
+line-height:calc(33/28);
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
         // padding-top: 60px;
     }
     @media screen and(min-width:1200px){
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        background: #f5f4fa;
         // padding-top: 94px;
 }
 }
@@ -57,7 +83,12 @@ margin-bottom: 10px;
     @media screen and(min-width:768px){
         display: flex;
         padding: 0px;
-       
+      
+    }
+    @media screen and(min-width:768px)and(max-width:1199px){
+        @include list(null,null, null, null,-15px,wrap);
+        align-content: center;
+        justify-content: center;
     }
     @media screen and(min-width:1200px){
         display: flex;
@@ -81,6 +112,10 @@ margin-bottom: 10px;
         width: calc(
             (100%-2+30)/2
         );
+       
+    }
+    @media screen and(min-width:768px)and(max-width:1199px){
+        @include item(null, null, null, null, 15px, 3, 30px)
     }
     @media screen and(min-width:1200px){
         width: 270px;
