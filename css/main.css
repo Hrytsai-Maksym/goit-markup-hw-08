@@ -3253,9 +3253,21 @@ textarea {
   z-index: 5;
   padding-top: 48px;
   padding-bottom: 48px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
-.mob-menu .container__mobile-menu {
+.mob-menu .is-open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.mob-menu.is-open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.container__mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3267,7 +3279,7 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .mob-menu {
+  .container__mobile-menu {
     display: none;
   }
 }
