@@ -2424,8 +2424,8 @@ p {
   .modal {
     width: 450px;
     height: 609px;
-    -webkit-transform: translate(-5%, -74%);
-            transform: translate(-5%, -74%);
+    -webkit-transform: translate(-60%, -74%);
+            transform: translate(-60%, -74%);
   }
 }
 
