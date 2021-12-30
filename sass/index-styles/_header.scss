@@ -143,11 +143,12 @@ margin-left: auto;
         flex-wrap: wrap;
         align-content: center;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start;
         & :last-child{
             margin-right: 0px;
       }
       @media screen and(min-width:1200px){
+          align-items: center;
         margin-right: 50px;
         display: flex;
         flex-direction: row;
@@ -165,6 +166,7 @@ margin-left: auto;
     @media screen and(min-width:768px){
         fill: $color-command-post;
         margin-right: 50px;
+       
     
         display: flex;
     margin-top: 0px;
@@ -320,4 +322,12 @@ display: none;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 text-align: center;
 height: 10px;
+}
+
+
+
+.contakts__wrapper{
+    @media screen and(min-width:768px) {
+        padding: 10px;
+    }
 }

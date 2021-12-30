@@ -19,10 +19,11 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-top: 0px;
-    margin-bottom: 50px;
+   
     background: #f5f4fa;
 
     @media screen and(min-width:480px) {
+        margin-bottom: 30px;
         font-weight: 700;
 font-size: 28px;
 line-height: calc(33/28);
@@ -34,6 +35,7 @@ color: #212121;
         // padding-top: 0px;
     }
     @media screen and(min-width:480px){
+        margin-bottom: 30px;
         font-weight: bold;
 font-size: 28px;
 line-height:calc(33/28);
@@ -46,6 +48,7 @@ color: #212121;
         // padding-top: 60px;
     }
     @media screen and(min-width:1200px){
+        margin-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -83,12 +86,16 @@ margin-bottom: 10px;
     @media screen and(min-width:768px){
         display: flex;
         padding: 0px;
+
       
     }
     @media screen and(min-width:768px)and(max-width:1199px){
         @include list(null,null, null, null,-15px,wrap);
         align-content: center;
         justify-content: center;
+        & :nth-last-child(-n + 2){
+            margin-top: 0;
+        }
     }
     @media screen and(min-width:1200px){
         display: flex;
@@ -115,7 +122,7 @@ margin-bottom: 10px;
        
     }
     @media screen and(min-width:768px)and(max-width:1199px){
-        @include item(null, null, null, null, 15px, 3, 30px)
+        @include item(null, null, null, null, 30px, 3, 30px)
     }
     @media screen and(min-width:1200px){
         width: 270px;
@@ -132,9 +139,9 @@ margin-bottom: 10px;
     @media screen and(min-width:768px) and  (max-width:1100px){
        
         margin-bottom: 30px;
-        width: calc(
-            (100%-2+30)/2
-        );
+        // width: calc(
+        // //     (100%-2+30)/2
+        // // );
     }
    
     
@@ -175,7 +182,7 @@ margin-bottom: 10px;
 
 .img{
     @media screen and(min-width:480px) and (min-width:480px){
-        width: 100%;
+        // width: 100%;
     } 
 }
 
