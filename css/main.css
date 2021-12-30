@@ -1035,10 +1035,13 @@ ul {
   padding: 0px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .section-advantages__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .section-advantages__list :last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -1065,6 +1068,12 @@ ul {
   }
   .section-advantages__list :last-child {
     margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section-advantages__item {
+    margin-bottom: 30px;
   }
 }
 
@@ -2737,6 +2746,7 @@ textarea {
 @media screen and (min-width: 480px) {
   .input-modal {
     height: 40px;
+    width: 100%;
   }
 }
 

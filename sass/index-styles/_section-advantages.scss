@@ -26,8 +26,11 @@
     /* margin: 0px; */
     padding: 0px;
     
-    @media screen and(min-width:480px){
+    @media screen and(min-width:480px) and(max-width:768px){
         flex-wrap: nowrap;
+        & :last-child{
+            margin-bottom: 0px;
+        }
     }
     @media screen and(min-width:768px){
         display: flex;
@@ -48,8 +51,8 @@
 }
 
 .section-advantages__item{
-    @media screen and(min-width:480px){
-
+    @media screen and(min-width:480px) and(max-width:767px){
+margin-bottom: 30px;
     }
     @media screen and(min-width:768px) and(max-width:1199px){
         @include item(null, null, null, null, 15px, 2, 30px);
