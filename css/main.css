@@ -1101,9 +1101,16 @@ ul {
 
 @media screen and (min-width: 320px) {
   .section-advantages__div {
-    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 4px;
-    position: relative;
     width: 450px;
     height: 120px;
   }
@@ -1145,20 +1152,16 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
   width: 70px;
   height: 70px;
   margin: 0px;
-}
-
-@media screen and (min-width: 480px) {
-  .section-advantages__svg {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: 50%;
-    -webkit-transform: translate(33%, -41%);
-            transform: translate(33%, -41%);
-  }
 }
 
 .section-advantages__card-title {
