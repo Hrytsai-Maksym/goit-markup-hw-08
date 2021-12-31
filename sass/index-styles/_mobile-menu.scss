@@ -2,6 +2,7 @@
     margin-left: auto;
     display: block;
     border: none;
+    background: none;
     // border-color: aquamarine;
     @media screen and(min-width:768px) {
         display: none;
@@ -23,6 +24,13 @@
         transform: translateX(0%);  
     }
 }
+.container-mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 
 .mob-menu.is-open{
     transform: translateX(0%);  
@@ -48,6 +56,7 @@
     margin-left: auto;
     margin-bottom: 30px;
     border: none;
+    background: none;
 }
 
 .mobile-menu-item {
@@ -81,7 +90,7 @@ color: #212121;
 }
 
 .mobile-menu-contakts {
-    margin-bottom: 134px;
+    margin-bottom: 64px;
 }
 
 .mobile-menu-contakts__item{
@@ -167,10 +176,11 @@ padding: 10px;
     background-color: #fff;}
 
     .mobile-menu-list{
-        padding-bottom: 302px;
+        // padding-bottom: 302px;
         // margin-left: 40px;
     }
 
 .mobile-menu-kontacts__list{
     // margin-left: 40px;
 }
+

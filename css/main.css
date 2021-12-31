@@ -842,9 +842,15 @@ ul {
   height: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contakts__wrapper {
     padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contakts__wrapper {
+    padding: 0px;
   }
 }
 
@@ -1842,6 +1848,12 @@ p {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .regular-customers__list :nth-last-child(-n+3) {
+    margin-bottom: 0px;
+  }
+}
+
 .regular-customers__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1919,7 +1931,6 @@ p {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer {
     display: block;
-    padding-bottom: 120px;
   }
 }
 
@@ -2927,7 +2938,6 @@ textarea {
 
 .container-cartridge {
   margin-top: 0px;
-  margin-bottom: 20px;
 }
 
 .cartridge__item {
@@ -2961,10 +2971,13 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cartridge__item {
-    width: 100%;
-    margin: 15px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     -ms-flex-preferred-size: calc(100%/2 - 30px);
         flex-basis: calc(100%/2 - 30px);
+  }
+  .cartridge__item :last-child {
+    margin: 0px;
   }
 }
 
@@ -3334,6 +3347,7 @@ textarea {
   margin-left: auto;
   display: block;
   border: none;
+  background: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -3358,6 +3372,20 @@ textarea {
 .mob-menu .is-open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.container-mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .mob-menu.is-open {
@@ -3387,6 +3415,7 @@ textarea {
   margin-left: auto;
   margin-bottom: 30px;
   border: none;
+  background: none;
 }
 
 .mobile-menu-item {
@@ -3423,7 +3452,7 @@ textarea {
 }
 
 .mobile-menu-contakts {
-  margin-bottom: 134px;
+  margin-bottom: 64px;
 }
 
 .mobile-menu-contakts__item {
@@ -3503,9 +3532,5 @@ textarea {
 
 .mobile-menu__svg {
   background-color: #fff;
-}
-
-.mobile-menu-list {
-  padding-bottom: 302px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 .container-cartridge{
     margin-top: 0px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     }
 
     .cartridge__item{
@@ -31,9 +31,13 @@
     //    }
        @media screen and(min-width:768px)and(max-width:1199px)  {
         // margin-right: 0px;
-        width: 100%;
+        // width: 100%;
         // margin: 15px;
-        @include item(null, null, null, null, 15px, 2, 30px) 
+         & :last-child{
+            margin: 0px;
+        }
+        @include item(null, null, 30px, 30px, null, 2, 30px) 
+       
        }
        @media screen and(min-width:1200px){
            margin-right: 30px;
