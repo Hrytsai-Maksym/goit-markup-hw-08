@@ -443,6 +443,13 @@ ul {
   color: #212121;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    height: 60px;
+    color: aqua;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header {
     display: -webkit-box;
@@ -451,9 +458,15 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container-header {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .header__navigation {
-    display: block;
+    margin-top: 15px;
   }
 }
 
@@ -2514,8 +2527,8 @@ p {
   .modal {
     width: 450px;
     height: 609px;
-    -webkit-transform: translate(-60%, -74%);
-            transform: translate(-60%, -74%);
+    -webkit-transform: translate(-60%, -50%);
+            transform: translate(-60%, -50%);
   }
 }
 
